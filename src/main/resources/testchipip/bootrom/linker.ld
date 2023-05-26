@@ -8,4 +8,6 @@ SECTIONS
     .text.hang : { *(.text.hang) }
     . = ROM_BASE + 0x80;
     .text.hang80 : { *(.text.hang80) }
-}
+    . = ROM_BASE + 0xba;
+    .text.custom_boot_stubs : { *(.text.custom_boot_stubs) }
+}   
